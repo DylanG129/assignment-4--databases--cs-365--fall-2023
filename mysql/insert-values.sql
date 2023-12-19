@@ -20,13 +20,13 @@ INSERT INTO track VALUES (1, 1, 4, 'Nix', '3.39');
 INSERT INTO track VALUES (1, 1, 5, 'Moon', '5.04');
 INSERT INTO track VALUES (1, 1, 6, 'Ymir', '4.27');
 INSERT INTO track VALUES (1, 1, 7, 'Ijiraq', '5.22');
-INSERT INTO track VALUES (1, 1, 8, 'Algol', '4.16');
+INSERT INTO track VALUES (1, 1, 8, 'Algol', '4.16');--
 INSERT INTO track VALUES (1, 1, 9, 'Dysnomia', '4.14');
 
 INSERT INTO track VALUES (2, 1, 1, 'Untitled', '3.57');
 INSERT INTO track VALUES (2, 1, 2, 'Obstacle 1', '4.11');
 INSERT INTO track VALUES (2, 1, 3, 'NYC', '4.20');
-INSERT INTO track VALUES (2, 1, 4, 'PDA', '5.00');
+INSERT INTO track VALUES (2, 1, 4, 'PDA', '5.00');--
 INSERT INTO track VALUES (2, 1, 5, 'Say Hello to the Angels', '4.28');
 INSERT INTO track VALUES (2, 1, 6, 'Hands Away', '3.06');
 INSERT INTO track VALUES (2, 1, 7, 'Obstacle 2', '3.47');
@@ -42,11 +42,11 @@ INSERT INTO track VALUES (3, 1, 4, 'Down So Low', '3.55');
 INSERT INTO track VALUES (3, 1, 5, 'Bloodshot Eye', '3.54');
 INSERT INTO track VALUES (3, 1, 6, 'Nightmare in Pink', '2.06');
 INSERT INTO track VALUES (3, 1, 7, 'Shine It On', '4.15');
-INSERT INTO track VALUES (3, 1, 8, 'Burn Baby Burn', '6.13');
+INSERT INTO track VALUES (3, 1, 8, 'Burn Baby Burn', '6.13');--
 
 INSERT INTO track VALUES (4, 1, 1, 'Hooch', '2.49');
 INSERT INTO track VALUES (4, 1, 2, 'Night Goat', '4.41');
-INSERT INTO track VALUES (4, 1, 3, 'Lizzy', '4.44');
+INSERT INTO track VALUES (4, 1, 3, 'Lizzy', '4.44');--
 INSERT INTO track VALUES (4, 1, 4, 'Goin’ Blind', '4.33');
 INSERT INTO track VALUES (4, 1, 5, 'Honey Bucket', '3.01');
 INSERT INTO track VALUES (4, 1, 6, 'Hag Me', '7.06');
@@ -65,14 +65,14 @@ INSERT INTO track VALUES (5, 1, 4, 'Year 2000 Non-Compliant Cardia', '3.26');
 INSERT INTO track VALUES (5, 1, 5, 'Kappa', '4.53');
 INSERT INTO track VALUES (5, 1, 6, 'Waltz for Aidan', '3.44');
 INSERT INTO track VALUES (5, 1, 7, 'May Nothing But Happiness Come Through Your Door', '8.30');
-INSERT INTO track VALUES (5, 1, 8, 'Oh! How the Dogs Stack Up', '2.04');
+INSERT INTO track VALUES (5, 1, 8, 'Oh! How the Dogs Stack Up', '2.04');--
 INSERT INTO track VALUES (5, 1, 9, 'Ex-Cowboy', '9.09');
 INSERT INTO track VALUES (5, 1, 10, 'Chocky', '9.23');
 INSERT INTO track VALUES (5, 1, 11, 'Christmas Steps', '10.39');
 INSERT INTO track VALUES (5, 1, 12, 'Punk Rock/Puff Daddy/Antichrist', '2.14');
 
 INSERT INTO track VALUES (5, 2, 1, 'Coolverine', '6.17');
-INSERT INTO track VALUES (5, 2, 2, 'Party in the Dark', '4.02');
+INSERT INTO track VALUES (5, 2, 2, 'Party in the Dark', '4.02');--
 INSERT INTO track VALUES (5, 2, 3, 'Brain Sweeties', '4.44');
 INSERT INTO track VALUES (5, 2, 4, 'Crossing the Road Material', '6.58');
 INSERT INTO track VALUES (5, 2, 5, 'aka 47', '4.16');
@@ -87,7 +87,7 @@ INSERT INTO track VALUES (6, 1, 1, 'Whiteout', '4.42');
 INSERT INTO track VALUES (6, 1, 2, 'By Your Side', '4.32');
 INSERT INTO track VALUES (6, 1, 3, 'New Song', '4.16');
 INSERT INTO track VALUES (6, 1, 4, 'The Stall', '4.56');
-INSERT INTO track VALUES (6, 1, 5, 'So Good', '5.59');
+INSERT INTO track VALUES (6, 1, 5, 'So Good', '5.59');--
 INSERT INTO track VALUES (6, 1, 6, 'Don’t Wanna', '3.43');
 INSERT INTO track VALUES (6, 1, 7, 'Don’t Let Go', '4.22');
 INSERT INTO track VALUES (6, 1, 8, 'Dre', '3.59');
@@ -96,10 +96,10 @@ INSERT INTO track VALUES (6, 1, 10, 'Above Control', '5.06');
 INSERT INTO track VALUES (6, 1, 11, 'Today Dear', '4.49');
 
 INSERT INTO played (played, artist_id, album_id, track_id) VALUES 
-("2006-08-14 10:21:03", 1, 1, 1),
-("2006-08-14 10:25:22", 2, 1, 1),
-("2006-08-14 10:30:25", 3, 1, 1),
-("2006-08-14 10:36:54", 4, 1, 1),
-("2006-08-14 10:41:43", 5, 1, 1),
-("2006-08-14 10:43:37", 5, 2, 1),
-("2006-08-14 10:47:21", 6, 1, 1);
+("2006-08-14 10:21:03", 1, 1, 8),
+("2006-08-14 10:25:22", 2, 1, 4),
+("2006-08-14 10:30:25", 3, 1, 8),
+("2006-08-14 10:36:54", 4, 1, 3),
+("2006-08-14 10:41:43", 5, 1, 8),
+("2006-08-14 10:43:37", 5, 2, 2),
+("2006-08-14 10:47:21", 6, 1, 5);

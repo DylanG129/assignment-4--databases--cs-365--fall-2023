@@ -5,8 +5,24 @@ JOIN album ON artist.artist_id = album.artist_id;
 SELECT artist_name 
 FROM artist 
 WHERE artist_id IN (
-    SELECT artist_id 
-    FROM album 
-    WHERE album_name IN ('Dysnomia', 'Turn on the Bright Lights', 'Dead Cool', 'Houdini', 'Come on Die Young', 'Every Country’s Sun', 'Heads Up')
+    SELECT artist_id
+    FROM album
 );
+
+SELECT artist.artist_name, album.album_name
+FROM artist
+JOIN album ON artist.artist_id = album.artist_id
+ORDER BY artist.artist_name, album.album_name;
+
+SELECT album.album_name, track.track_name
+FROM album
+JOIN track ON album.album_id = track.album_id AND album.artist_id = track.artist_id
+ORDER BY album.album_name, track.track_name;
+
+SELECT track.track_name, track.time, played.played
+FROM played
+JOIN track ON played.artist_id = track.artist_id AND 
+             played.album_id = track.album_id AND 
+             played.track_id = track.track_id
+ORDER BY played.played, track.track_name;
 
