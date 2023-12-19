@@ -2,12 +2,10 @@ SELECT CONCAT(artist.artist_name, ' recorded ', album.album_name) AS Recording
 FROM artist
 JOIN album ON artist.artist_id = album.artist_id;
 
-SELECT artist_name 
-FROM artist 
-WHERE artist_id IN (
-    SELECT artist_id
-    FROM album
-);
+SELECT 
+  (SELECT artist_name FROM artist WHERE artist_id = album.artist_id) AS artist_name,
+  album_name
+FROM album;
 
 SELECT artist.artist_name, album.album_name
 FROM artist
