@@ -21,6 +21,23 @@ CREATE TABLE IF NOT EXISTS track (
 );
 
 CREATE TABLE IF NOT EXISTS played (
+  played_id  INT AUTO_INCREMENT,
   played     TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (played)
+  artist_id  INT          NOT NULL,
+  album_id   INT          NOT NULL,
+  track_id   INT          NOT NULL,
+  PRIMARY KEY (played_id),
+  FOREIGN KEY (artist_id, album_id, track_id) REFERENCES track(artist_id, album_id, track_id)
 );
+
+CREATE INDEX idx_artist_name ON artist(artist_name);
+
+CREATE INDEX idx_album_name ON album(album_name);
+CREATE INDEX idx_album_artist_id ON album(artist_id);
+
+CREATE INDEX idx_track_name ON track(track_name);
+CREATE INDEX idx_track_album_id ON track(album_id);
+CREATE INDEX idx_track_artist_id ON track(artist_id);
+
+CREATE INDEX idx_played_timestamp ON played(played);
+CREATE INDEX idx_played_track_id ON played(track_id);
